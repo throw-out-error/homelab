@@ -17,9 +17,9 @@ args = parser.parse_args()
 file_path = args.file or "stack.json5"
 stack = create_stack_from_file(file_path)
 
-if args.subcommand == "on":
+if args.subcommand == "up":
     start_stack(stack, detach=args.detach)
-elif args.subcommand == "off":
+elif args.subcommand == "down":
     stop_stack(stack)
 elif args.subcommand == "restart" and not args.arg1:
     restart_stack(stack)
