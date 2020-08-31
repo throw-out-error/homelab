@@ -1,0 +1,34 @@
+{
+  "name": "@throw-out-error/homelab",
+  "version": "1.0.0",
+  "description": "a homelab generation script that uses docker-compose to deploy services.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node-dev --respawn --transpile-only src/index.ts"
+  },
+  "bin": {
+    "homelab-gen": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/throw-out-error/homelab.git"
+  },
+  "author": "Throw Out Error",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/throw-out-error/homelab/issues"
+  },
+  "homepage": "https://github.com/throw-out-error/homelab#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3",
+    "typescript": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^7.3.1",
+    "@types/node": "^14.6.2"
+  }
+}

@@ -1,11 +1,15 @@
 # Homelab
 
-a homelab generation script that uses docker-compose and dialog.
+a homelab generation script that uses docker-compose to deploy services.
 
 ## Dependencies
 
-First, you need to install the dialog command. You also will need to have bash installed.
+* Latest Python 3
+* Docker
+* Docker Compose
 
-### In Ubuntu
-`sudo apt install dialog`
+## Installation
 
+```bash
+npm install @throw-out-error/homelab
+```
